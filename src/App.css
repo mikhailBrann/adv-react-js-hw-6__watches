@@ -1,0 +1,132 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  padding: 20px;
+}
+
+.watch-form {
+  margin-bottom: 20px;
+}
+
+.watch-form__field {
+  margin-bottom: 10px;
+}
+
+.watch-form__field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.watch-form__field input {
+  padding: 5px;
+  width: 200px;
+}
+
+.watches {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.watch {
+  position: relative;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.watch__delete {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.watch__time {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.watch__timezone {
+  color: #666;
+}
+
+.watch__face {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: relative;
+  margin: 20px auto;
+  background: white;
+}
+
+.watch__center {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #333;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+}
+
+.watch__hour-hand {
+  position: absolute;
+  width: 4px;
+  height: 60px;
+  background: #333;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  z-index: 3;
+}
+
+.watch__minute-hand {
+  position: absolute;
+  width: 3px;
+  height: 80px;
+  background: #666;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  z-index: 2;
+}
+
+.watch__second-hand {
+  position: absolute;
+  width: 2px;
+  height: 90px;
+  background: #f00;
+  top: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  z-index: 1;
+}
+
+.watch__hour-mark {
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  background: #333;
+  top: 0;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.watch-form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+}
